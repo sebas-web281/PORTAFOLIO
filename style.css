@@ -1608,7 +1608,16 @@ button, input{
 }
 
 /* For Small Devices */
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 400px) {
+    html,
+    body{
+        overflow-x: hidden;
+        overflow-y: auto;
+        margin: 0;
+        padding: 0;
+    }
+    
+    
     .container{
         margin-left: var(--mb-1);
         margin-right: var(--mb-1);
@@ -1616,7 +1625,7 @@ button, input{
     }
     
     .home__img{
-        width: 350px;
+        width: 550px;
         position: relative;  
         left: -25px; 
     }
@@ -1626,9 +1635,17 @@ button, input{
     .home__subtitle{
         font-size: var(--normal-font-size);
     }
+
+    #about{
+        margin-top: -150px;
+    }
     .about__info{
         grid-template-columns: repeat(2, 1fr);
         row-gap: .5rem;
+    }
+    
+    #Qualification{
+        margin-bottom: 700px;
     }
 
     .contact__container,
@@ -1660,8 +1677,12 @@ button, input{
     }
     .home__data{
          position: relative; 
-  top: -150px;   
+        top: -150px;   
     }
+
+    
+    
+   
 
     /*===== Home carol =====*/
     .about__button__carol2{
@@ -1671,16 +1692,15 @@ button, input{
         top: -30px;
      }
     .presentation__carol{
-        width: 320px;  
-    max-width: 100%;
-    height: auto;   
+         
+      
 
      }
 
      .presentation__carol2{
-        width: 320px;  
-    max-width: 100%;
-    height: auto;   
+        width: 320p  
+        max-width: 100
+        height: aut  
 
      }
 
